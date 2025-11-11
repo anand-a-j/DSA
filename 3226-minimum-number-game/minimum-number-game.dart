@@ -4,12 +4,12 @@ class Solution {
 
     List<int> round = [];
 
-    for(int i = 0;i<nums.length;i++){
+    for(int i = 0;i<nums.length;i+=2){
         
         round.add(nums[i+1]);
         round.add(nums[i]);
 
-        i++;
+
     }
 
     return round;
