@@ -1,18 +1,66 @@
 class Solution {
   void moveZeroes(List<int> nums) {
-   int k = 0;
+   int j = 0;
    int temp = 0;
 
-   for(int i = 0;i<nums.length;i++){
+   for(int i =0;i<nums.length;i++){
     if(nums[i] != 0){
-        temp = nums[i];
-        nums[i] = nums[k];
-        nums[k] = temp;
-        k++;
+       temp = nums[j];
+       nums[j] = nums[i];
+       nums[i] = temp;
+        j++;
     }
+   
    }
-  }
+
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// class Solution {
+//   void moveZeroes(List<int> nums) {
+//    int k = 0;
+//    int temp = 0;
+
+//    for(int i = 0;i<nums.length;i++){
+//     if(nums[i] != 0){
+//         temp = nums[i];
+//         nums[i] = nums[k];
+//         nums[k] = temp;
+//         k++;
+//     }
+//    }
+//   }
+// }
 
 
 
